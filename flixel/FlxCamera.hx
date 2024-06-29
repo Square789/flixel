@@ -610,8 +610,8 @@ class FlxCamera extends FlxBasic
 		if (_currentDrawItem != null
 			&& _currentDrawItem.type == FlxDrawItemType.TILES
 			&& _headTiles.graphics == graphic
-			&& _headTiles.colored == colored
-			&& _headTiles.hasColorOffsets == hasColorOffsets
+			// && _headTiles.colored == colored
+				// && _headTiles.hasColorOffsets == hasColorOffsets
 			&& _headTiles.blending == blendInt
 			&& _headTiles.blend == blend
 			&& _headTiles.antialiasing == smooth
@@ -638,8 +638,8 @@ class FlxCamera extends FlxBasic
 
 		itemToReturn.graphics = graphic;
 		itemToReturn.antialiasing = smooth;
-		itemToReturn.colored = colored;
-		itemToReturn.hasColorOffsets = hasColorOffsets;
+		itemToReturn.colored = true; // colored;
+		itemToReturn.hasColorOffsets = true; // hasColorOffsets;
 		itemToReturn.blending = blendInt;
 		itemToReturn.blend = blend;
 		itemToReturn.shader = shader;
